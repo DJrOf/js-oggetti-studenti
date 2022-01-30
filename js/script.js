@@ -22,7 +22,7 @@ let content = '';
 for(let key in student) {
     content += `<div>${key}: ${student[key]}</div>`;
     display.innerHTML = content;
-}
+};
 
 
 

@@ -1,3 +1,20 @@
-.display {
+* {
     color: black;
 }
+
+.display {
+    color: black;
+    height: 400px;
+}
+
+ul {
+    color: black; 
+}
+
+const getWordFromUser = () => {
+    let word;
+    do {
+        word = prompt('Nome').trim();
+    } while (!word);
+    return word;
+};
