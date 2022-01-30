@@ -24,41 +24,10 @@ for(let key in student) {
     display.innerHTML = content;
 }
 
-//3) Students array
-
-
-const display = document.getElementById('display');
-
-const students = [
-    {nome: 'Daniel', cognome: 'Ofosu', età: 26,},
-    {nome: 'Darnel', cognome: 'Ofosu', età: 31,},
-    {nome: 'Dandalf', cognome: 'Ofosu', età: 981,},
-];
 
 
 
-// Print-Prompt functions
 
-// 4) Print
-// - Cycle
-const printArrayObjects = (objectArray, targetElement) => {
-    let content = '';
-    for (let i = 0; i < objectArray.lenght; i++) {
-        content += '<ul>';
-        const currentObject = objectArray[i];
-        for (let key in currentObject) {
-            content += `<li>${key}: ${currentObject[key]}</li>`;
-        }
-        content += '</ul>';
-        content += '<hr/>';
-    }
-    targetElement.innerHTML = content;
-};
-
-// - Print
-printArrayObjects(students, display);
-
-const getWordFromUser = () =>
 
 
 
